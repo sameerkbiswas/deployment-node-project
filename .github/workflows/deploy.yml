@@ -17,7 +17,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /path/to/your/app
+            cd /home/ubuntu/deployment-node-project
             git pull origin main
             docker-compose down
             docker-compose up -d --build
