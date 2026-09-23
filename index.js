@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
-  res.send('Hello, World from Express server deployed on Ubuntu!');
+  res.send('Hello, World from Express server deployed on Ubuntu. V2');
 });
 
 app.listen(port, () => {
